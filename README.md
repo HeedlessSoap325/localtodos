@@ -43,8 +43,8 @@ It was created as a learning project to explore state management, encryption, an
 
 ### Installation
 ```bash
-  git clone https://github.com/yourusername/local-todos.git
-  cd local-todos
+  git clone https://github.com/HeedlessSoap325/localtodos
+  cd localtodos
   npm install
 ```
 
