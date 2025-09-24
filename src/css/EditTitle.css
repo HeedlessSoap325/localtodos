@@ -1,0 +1,55 @@
+.edit-title-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-title-center{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 200px;
+    border-radius: var(--modal-radius);
+    background: var(--accent-background);
+}
+
+.edit-title-center input {
+    margin: 20px;
+    width: calc(100% - 64px);
+    height: 45px;
+    font-size: 14px;
+    padding: 0 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.edit-title-center  input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 6px rgba(74, 144, 226, 0.3);
+}
+
+.edit-title-buttons .edit-title-button {
+    height: var(--button-height);
+    padding: 0 16px;
+    border: none;
+    border-radius: var(--button-radius);
+    background: var(--button-main-color);
+    color: var(--button-text-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    margin-left: 20px;
+    margin-top: 35px;
+}
+
+.edit-title-buttons .edit-title-button:hover {
+    background: var(--button-hover-color);
+}
+
+.edit-title-buttons .edit-title-button:active {
+    transform: scale(0.97);
+}

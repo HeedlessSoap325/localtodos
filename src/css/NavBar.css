@@ -1,0 +1,41 @@
+.nav-bar-container{
+    width: 100%;
+    height: var(--height-nav-bar);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    background: var(--accent-background);
+}
+
+.nav-bar-left {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 1rem;
+}
+
+.nav-bar-right h1 {
+    margin-right: 2rem;
+    justify-self: center;
+}
+
+.nav-bar-container .nav-bar-button {
+    height: var(--button-height);
+    padding: 0 16px;
+    border: none;
+    border-radius: var(--button-radius);
+    background: var(--button-main-color);
+    color:var(--button-text-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.nav-bar-container .nav-bar-button:hover {
+    background: var(--button-hover-color);
+}
+
+.nav-bar-container .nav-bar-button:active {
+    transform: scale(0.97);
+}

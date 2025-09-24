@@ -1,0 +1,28 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/**
+     --accent-background: linear-gradient(
+            rgba(220, 221, 223, 0.9),
+            rgba(220, 221, 223, 0.9)
+    );
+ **/
+
+:root{
+    --accent-background: #f0f0f0;
+
+    --width-space-left: 12vw;
+    --height-nav-bar: 10vh;
+
+    --button-main-color: #4a90e2;
+    --button-hover-color: #357ab8;
+    --button-text-color: white;
+    --button-radius: 6px;
+    --button-height: 45px;
+    --button-disabled-color: #bbb;
+
+    --modal-radius: 25px;
+}

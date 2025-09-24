@@ -1,0 +1,36 @@
+.todo {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0.5rem;
+    background: #fff;
+    cursor: pointer;
+}
+
+.todo.completed {
+    opacity: 0.7;
+    text-decoration: line-through;
+}
+
+.todo-info {
+    flex: 1;
+}
+
+.todo-header {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.todo-title {
+    font-weight: bold;
+    flex: 1;
+}
+
+.todo-date {
+    font-size: 0.8rem;
+    color: #888;
+}

@@ -1,0 +1,110 @@
+.auth-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-background);
+}
+
+.auth-container input {
+    height: 45px;
+    font-size: 14px;
+}
+
+.auth-button {
+    height: var(--button-height);
+    padding: 0 16px;
+    border: none;
+    border-radius: var(--button-radius);
+    background: var(--button-main-color);
+    color: var(--button-text-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.auth-button:disabled {
+    background: var(--button-disabled-color);
+    cursor: not-allowed;
+}
+
+.auth-button:hover:not(:disabled) {
+    background: var(--button-hover-color);
+}
+
+.auth-button:active:not(:disabled) {
+    transform: scale(0.97);
+}
+
+.auth-container-center {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 30px 25px;
+    border-radius: 20px;
+    max-width: 380px;
+    width: 100%;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.auth-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-inputs-line-1 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.auth-inputs-line-1 > input {
+    flex: 1;
+    padding: 0 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.auth-inputs-line-1 > input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 6px rgba(74, 144, 226, 0.3);
+}
+
+.auth-inputs-line-1 > .auth-button {
+    margin-left: 12px;
+}
+
+.auth-inputs-line-2 input {
+    margin-bottom: 20px;
+    padding: 0 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.auth-inputs-line-2 input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 6px rgba(74, 144, 226, 0.3);
+}
+
+.auth-buttons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.auth-buttons .auth-button:last-child {
+    margin-left: 12px;
+}
+
+.auth-message {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
